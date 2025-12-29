@@ -22,7 +22,7 @@ export const alwars: Alwar[] = [
     shortBio: 'Poigai Alwar is one of the first three Alwars, known as Mudhal Alwars. Born from a golden lotus in a pond (poigai) at Kanchipuram, he composed the first hundred verses of Mudhal Tiruvandadi. Legend says he, along with Bhuthathalwar and Peyalwar, took shelter in a small space during a storm where they experienced the divine presence of Lord Vishnu.',
     keyWorks: ['Mudhal Tiruvandadi (100 verses)'],
     keyStories: ['The Three Alwars in the Storm', 'Birth from the Golden Lotus'],
-    divyaDesams: ['Kanchipuram', 'Thirukovilur'],
+    divyaDesams: ['Kanchipuram', 'Thirukovilur'], 
   },
   {
     id: 'bhuthathalwar',
