@@ -1,0 +1,97 @@
+export interface Pasuram {
+  number: number
+  tamilTitle: string
+  tamilText: string
+  englishTranslation: string
+  meaning: string[]
+  sceneDescription: string
+  keywords: string[]
+  theme: 'wake-up' | 'community' | 'krishna-praise' | 'surrender'
+}
+
+// Scaffolded with first lines - full content to be added
+export const tiruppavaiPasurams: Pasuram[] = [
+  {
+    number: 1,
+    tamilTitle: 'மார்கழித் திங்கள்',
+    tamilText: 'மார்கழித் திங்கள் மதிநிறைந்த நன்னாளால்\nநீராடப் போதுவீர் போதுமினோ நேரிழையீர்\nசீர்மல்கு ஆய்ப்பாடிச் செல்வச் சிறுமீர்காள்\nகூர்வேல் கொடுந்தொழிலன் நந்தகோபன் குமரன்\nஏரார்ந்த கண்ணி யசோதை இளஞ்சிங்கம்\nகார்மேனிச் செங்கண் கதிர்மதியம் போல்முகத்தான்\nநாராயணனே நமக்கே பறைதருவான்\nபாரோர் புகழப் படிந்தேலோர் எம்பாவாய்',
+    englishTranslation: 'In the month of Margazhi, on this auspicious full moon day, come, let us bathe! O maidens with beautiful ornaments! O prosperous young girls of the wealthy cowherd village! The son of Nandagopa who wields a sharp spear, the young lion of Yashoda with beautiful eyes, Krishna with his dark cloud-like complexion, red eyes, and face radiant like sun and moon - that Narayana alone will grant us our desires. Come, let us observe this vow that the world will praise.',
+    meaning: [
+      'Margazhi month is most auspicious for worship',
+      'The gopis invite each other to observe the Pavai Nonbu',
+      'Krishna is described with beautiful imagery',
+      'Only Narayana can fulfill spiritual desires',
+      'The vow brings glory recognized by the world'
+    ],
+    sceneDescription: 'Gopis gathering at dawn in the cowherd village, calling out to each other with the moon still visible in the Margazhi sky.',
+    keywords: ['Margazhi', 'Pavai Nonbu', 'Nandagopa', 'Yashoda', 'Narayana'],
+    theme: 'wake-up'
+  },
+  {
+    number: 2,
+    tamilTitle: 'வையத்து வாழ்வீர்காள்',
+    tamilText: 'வையத்து வாழ்வீர்காள் நாமும் நம்பாவைக்கு\nசெய்யும் கிரிசைகள் கேளீரோ பாற்கடலுள்\nபையத் துயின்ற பரமனடி பாடி\nநெய்யுண்ணோம் பாலுண்ணோம் நாட்காலே நீராடி\nமையிட் டெழுதோம் மலரிட்டு நாம்முடியோம்\nசெய்யா தனசெய்யோம் தீக்குறளை சென்றோதோம்\nஐயமும் பிச்சையும் ஆந்தனையும் கைகாட்டி\nஉய்யுமா றெண்ணி உகந்தேலோர் எம்பாவாய்',
+    englishTranslation: 'O people of this world! Listen to the observances we follow for our Pavai vow. Singing the feet of the Supreme Lord who sleeps gently on the milk ocean, we shall not eat ghee or drink milk. We shall bathe at dawn, not apply collyrium, not adorn our hair with flowers. We shall not do forbidden things or speak ill of others. We shall give alms and charity as much as we can. Thinking of ways to attain salvation, we joyfully observe this vow.',
+    meaning: [
+      'The rules of Pavai Nonbu are explained',
+      'Fasting from rich foods like ghee and milk',
+      'Simple appearance without makeup or flowers',
+      'Avoiding negative speech and actions',
+      'Practicing charity and seeking salvation'
+    ],
+    sceneDescription: 'Gopis explaining the vratam rules to the world, showing their simple attire and the pre-dawn bathing ritual.',
+    keywords: ['Vratam', 'Fasting', 'Charity', 'Pavai Nonbu', 'Salvation'],
+    theme: 'community'
+  },
+  {
+    number: 3,
+    tamilTitle: 'ஓங்கி உலகளந்த',
+    tamilText: 'ஓங்கி உலகளந்த உத்தமன் பேர்பாடி\nநாங்கள் நம்பாவைக்குச் சாற்றிநீர் ஆடினால்\nதீங்கின்றி நாடெல்லாம் திங்கள்மும் மாரிபெய்து\nஓங்கு பெருஞ்செந்நெல் ஊடுகயல் உகளப்\nபூங்குவளைப் போதில் பொறிவண்டு கண்படுப்ப\nதேங்காதே புக்கிருந்து சீர்த்த முலைபற்றி\nவாங்கக் குடம்நிறைக்கும் வள்ளல்பெரும் பசுக்கள்\nநீங்காத செல்வம் நிறைந்தேலோர் எம்பாவாய்',
+    englishTranslation: 'If we sing the names of the Supreme One who grew tall and measured the worlds, and bathe for our Pavai vow, the entire land will be free from troubles. Rain will fall thrice a month, tall red paddy will grow with fish playing in the fields, spotted bees will sleep in blue lotus buds, and generous cows will fill pots with milk without being coaxed. Such never-diminishing prosperity will abound.',
+    meaning: [
+      'Vamana avatar reference - measuring the worlds',
+      'Proper observance brings prosperity to the land',
+      'Three rains per month ensure good harvest',
+      'Nature flourishes - fish, bees, lotus',
+      'Cows give abundant milk - symbol of prosperity'
+    ],
+    sceneDescription: 'A prosperous village scene with tall paddy fields, lotus ponds with bees, and generous cows being milked.',
+    keywords: ['Vamana', 'Prosperity', 'Rain', 'Agriculture', 'Cows'],
+    theme: 'krishna-praise'
+  },
+  { number: 4, tamilTitle: 'ஆழிமழைக் கண்ணா', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Invoking the rain god Varuna', 'Describing the clouds and rain', 'Connection between devotion and nature'], sceneDescription: 'Dark rain clouds gathering as gopis invoke the rain god.', keywords: ['Varuna', 'Rain', 'Clouds'], theme: 'krishna-praise' },
+  { number: 5, tamilTitle: 'மாயனை மன்னு', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Praising Krishna as Mayavan', 'The eternal Lord of Dwaraka'], sceneDescription: 'Krishna depicted with his divine attributes.', keywords: ['Maya', 'Dwaraka', 'Krishna'], theme: 'krishna-praise' },
+  { number: 6, tamilTitle: 'புள்ளும் சிலம்பினகாண்', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Birds are chirping at dawn', 'Time to wake up for the vow'], sceneDescription: 'Early morning scene with birds calling.', keywords: ['Dawn', 'Birds', 'Wake-up'], theme: 'wake-up' },
+  { number: 7, tamilTitle: 'கீசுகீசு என்றெங்கும்', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Sound of birds everywhere', 'The village is waking up'], sceneDescription: 'Village coming alive with bird sounds.', keywords: ['Birds', 'Village', 'Morning'], theme: 'wake-up' },
+  { number: 8, tamilTitle: 'கீழ்வானம் வெள்ளென்று', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Eastern sky turning white', 'Dawn is breaking'], sceneDescription: 'Eastern horizon lightening as dawn approaches.', keywords: ['Dawn', 'Sky', 'East'], theme: 'wake-up' },
+  { number: 9, tamilTitle: 'தூமணி மாடத்து', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Waking a gopi in a mansion', 'Calling her to join the vow'], sceneDescription: 'Gopis calling at a wealthy home.', keywords: ['Mansion', 'Wake-up', 'Gopi'], theme: 'wake-up' },
+  { number: 10, tamilTitle: 'நோற்றுச் சுவர்க்கம்', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Heavenly rewards of devotion', 'The merit of the vow'], sceneDescription: 'Divine blessings being described.', keywords: ['Heaven', 'Merit', 'Devotion'], theme: 'surrender' },
+  { number: 11, tamilTitle: 'கற்றுக் கறவை', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Young calves and cows', 'Cowherd life described'], sceneDescription: 'Calves and cows in the village.', keywords: ['Calves', 'Cows', 'Cowherd'], theme: 'community' },
+  { number: 12, tamilTitle: 'கனைத்திளங் கற்றெருமை', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Buffalo calves lowing', 'Rural village scene'], sceneDescription: 'Buffalo calves in the village.', keywords: ['Buffalo', 'Village', 'Rural'], theme: 'community' },
+  { number: 13, tamilTitle: 'புள்ளின்வாய் கீண்டானை', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Krishna who tore Bakasura', 'Praising his heroic deeds'], sceneDescription: 'Krishna defeating the crane demon.', keywords: ['Bakasura', 'Hero', 'Krishna'], theme: 'krishna-praise' },
+  { number: 14, tamilTitle: 'உங்கள் புழக்கடை', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Waking another gopi', 'Describing her home'], sceneDescription: 'Gopis at another doorstep.', keywords: ['Wake-up', 'Gopi', 'Home'], theme: 'wake-up' },
+  { number: 15, tamilTitle: 'எல்லே இளங்கிளியே', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Addressing a young parrot-like girl', 'Affectionate wake-up call'], sceneDescription: 'Gopis calling a beautiful young girl.', keywords: ['Parrot', 'Youth', 'Beauty'], theme: 'wake-up' },
+  { number: 16, tamilTitle: 'நாயகனாய் நின்ற', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Krishna as the leader', 'His supreme position'], sceneDescription: 'Krishna as the lord of all.', keywords: ['Leader', 'Supreme', 'Krishna'], theme: 'krishna-praise' },
+  { number: 17, tamilTitle: 'அம்பரமே தண்ணீரே', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Sky and water', 'Elements praising Krishna'], sceneDescription: 'Nature elements in devotion.', keywords: ['Sky', 'Water', 'Elements'], theme: 'krishna-praise' },
+  { number: 18, tamilTitle: 'உந்து மதகளிற்றன்', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Waking Nandagopa', 'The chief of cowherds'], sceneDescription: 'At Nandagopa\'s mansion.', keywords: ['Nandagopa', 'Chief', 'Mansion'], theme: 'wake-up' },
+  { number: 19, tamilTitle: 'குத்து விளக்கெரிய', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Lamps burning bright', 'Waking Yashoda'], sceneDescription: 'Inside Yashoda\'s quarters.', keywords: ['Lamp', 'Yashoda', 'Home'], theme: 'wake-up' },
+  { number: 20, tamilTitle: 'முப்பத்து மூவர்', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Thirty-three gods', 'Divine assembly'], sceneDescription: 'Gods gathered in devotion.', keywords: ['Devas', 'Gods', 'Divine'], theme: 'krishna-praise' },
+  { number: 21, tamilTitle: 'ஏற்ற கலங்கள்', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Water pots filled', 'Preparation for bathing'], sceneDescription: 'Gopis preparing for the ritual bath.', keywords: ['Pots', 'Water', 'Bath'], theme: 'community' },
+  { number: 22, tamilTitle: 'அங்கண் மாஞாலத்து', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['The beautiful world', 'Krishna\'s presence'], sceneDescription: 'The world beautified by Krishna.', keywords: ['World', 'Beauty', 'Krishna'], theme: 'krishna-praise' },
+  { number: 23, tamilTitle: 'மாரிமலை முழஞ்சில்', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Rain-bearing clouds', 'Nature imagery'], sceneDescription: 'Monsoon clouds over mountains.', keywords: ['Rain', 'Mountains', 'Clouds'], theme: 'krishna-praise' },
+  { number: 24, tamilTitle: 'அன்று இவ்வுலகம்', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['In ancient times', 'Krishna\'s cosmic deeds'], sceneDescription: 'Cosmic form of Krishna.', keywords: ['Cosmic', 'Ancient', 'Universe'], theme: 'krishna-praise' },
+  { number: 25, tamilTitle: 'ஒருத்தி மகனாய்', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Born as one woman\'s son', 'Krishna\'s birth story'], sceneDescription: 'Krishna\'s divine birth.', keywords: ['Birth', 'Devaki', 'Krishna'], theme: 'krishna-praise' },
+  { number: 26, tamilTitle: 'மாலே மணிவண்ணா', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['O sapphire-hued Lord', 'Prayer to Krishna'], sceneDescription: 'Gopis praying to blue Krishna.', keywords: ['Sapphire', 'Blue', 'Prayer'], theme: 'surrender' },
+  { number: 27, tamilTitle: 'கூடாரை வெல்லும்', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Conquering enemies', 'Krishna\'s protection'], sceneDescription: 'Krishna as protector.', keywords: ['Protection', 'Victory', 'Enemies'], theme: 'surrender' },
+  { number: 28, tamilTitle: 'கறவைகள் பின்சென்று', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['Following the cows', 'Cowherd duties'], sceneDescription: 'Krishna tending cows.', keywords: ['Cows', 'Cowherd', 'Service'], theme: 'community' },
+  { number: 29, tamilTitle: 'சிற்றஞ் சிறுகாலே', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['In the early morning', 'Final requests to Krishna'], sceneDescription: 'Gopis making final requests.', keywords: ['Morning', 'Request', 'Blessing'], theme: 'surrender' },
+  { number: 30, tamilTitle: 'வங்கக் கடல்கடைந்த', tamilText: '[Tamil text to be added]', englishTranslation: '[Translation to be added]', meaning: ['He who churned the ocean', 'Final surrender and blessings'], sceneDescription: 'Gopis receiving blessings from Krishna.', keywords: ['Ocean', 'Churning', 'Blessing', 'Surrender'], theme: 'surrender' },
+]
+
+export const tiruppavaiThemes = [
+  { id: 'all', name: 'All Pasurams', count: 30 },
+  { id: 'wake-up', name: 'Wake-up Calls', count: 10 },
+  { id: 'community', name: 'Community & Vow', count: 5 },
+  { id: 'krishna-praise', name: 'Krishna Praise', count: 10 },
+  { id: 'surrender', name: 'Surrender', count: 5 },
+]
