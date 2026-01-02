@@ -58,7 +58,7 @@ export const videos: Video[] = [
       "Tirupati Divya desam depiction in soft toys created for an event at Fine Arts. 2023 By Chitra Raman",
     brief:
       "The story of Tirupati depicted through soft toys, presented at Fine Arts Chembur with narration by Chitra Raman.",
-    category: "Divya Desam",
+    category: "Events & Commissions",
     youtubeUrl: "https://www.youtube.com/watch?v=9VcUw9bGoow",
     youtubeId: "9VcUw9bGoow",
     venue: "Fine Arts Chembur, 2023",
