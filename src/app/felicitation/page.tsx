@@ -58,11 +58,20 @@ const felicitations = [
   {
     id: "3",
     title: "Brahmo Utsavam Vahanam Display",
-    felicitatedBy: "Smt Chandra Ramani",
-    venue: "Ahobila Mutt",
+    felicitatedBy: "Smt Chandra Ramani and the Trustee of the Temple",
+    venue: "Ahobila Mutt, 2024",
     description:
       "Felicitated for display of dolls depicting various vahanam in Brahmo Utsavam.",
-    image: "/felicitations/vahanam-display.jpg",
+    image: "/felicitations/brahmo-utsov-2024.jpg",
+  },
+  {
+    id: "10",
+    title: "Brahmo Utsavam Vahanam Display",
+    felicitatedBy: "Smt Chandra Ramani and the Trustee of the Temple",
+    venue: "Ahobila Mutt, 2025",
+    description:
+      "Felicitated for display of dolls depicting various vahanam in Brahmo Utsavam.",
+    image: "/felicitations/brahmo-utsov-2025.jpg",
   },
   {
     id: "4",
@@ -98,6 +107,22 @@ const felicitations = [
     description:
       'Introduced to TV channel Podigai for display of Andal\'s Thiruppavai Pashuram "Etra Kalangal" on Ekadashi day, 6th January 2020.',
     image: "/felicitations/podigai-tv.jpg",
+  },
+  {
+    id: "8",
+    title: "Soft Toys Depiction",
+    venue: "Oberoi Towers",
+    description:
+      "Felicitated for  soft toys created for an event at Oberoi Towers 2023",
+    image: "/felicitations/soft-toys-depiction-oberoi-2023.jpg",
+  },
+  {
+    id: "9",
+    title: "Soft Toys Depiction ",
+    venue: "Oberoi Towers",
+    description:
+      "Felicitated for  soft toys created for an event at Oberoi Towers 2024",
+    image: "/felicitations/soft-toys-depiction-oberoi.jpg",
   },
 ];
 

@@ -193,7 +193,7 @@ export function AboutHero() {
           >
             <div className="aspect-[4/5] rounded-2xl overflow-hidden shadow-xl">
               <Image
-                src="/about-me-img.jpg"
+                src="/about-me.jpg"
                 alt="Chitra Raman"
                 width={600}
                 height={750}
@@ -432,14 +432,14 @@ export function Background() {
             className="grid grid-cols-2 gap-4"
           >
             <Image
-              src="/gallery/krishna-janmashtami.jpg"
+              src="/gallery/gallery-2.jpg"
               alt="Ramayana Golu"
               width={300}
               height={300}
               className="rounded-xl aspect-square object-cover"
             />
             <Image
-              src="/gallery/manavala-mamuni.jpg"
+              src="/gallery/chitra-raman-picture.jpg"
               alt="Ahobilam"
               width={300}
               height={300}

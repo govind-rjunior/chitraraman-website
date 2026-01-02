@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { Send, CheckCircle } from "lucide-react";
+import { Send, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 
 const requirementTypes = [
   "Custom Doll Depiction",
@@ -13,7 +13,10 @@ const requirementTypes = [
 ];
 
 export default function ContactForm() {
-  const [submitted, setSubmitted] = useState(false);
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "success" | "error"
+  >("idle");
+  const [errorMessage, setErrorMessage] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -24,25 +27,46 @@ export default function ContactForm() {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    setStatus("loading");
+    setErrorMessage("");
 
-    // Create mailto link with form data
-    const subject = encodeURIComponent(
-      `Inquiry: ${formData.requirementType} - from ${formData.name}`
-    );
-    const body = encodeURIComponent(
-      `Name: ${formData.name}\n` +
-        `Email: ${formData.email}\n` +
-        `Phone: ${formData.phone}\n` +
-        `City: ${formData.city}\n` +
-        `Requirement: ${formData.requirementType}\n` +
-        `Preferred Date: ${formData.date}\n\n` +
-        `Message:\n${formData.message}`
-    );
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-    window.location.href = `mailto:chitraraman2008@gmail.com?subject=${subject}&body=${body}`;
-    setSubmitted(true);
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || "Failed to send message");
+      }
+
+      setStatus("success");
+      // Reset form
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        city: "",
+        requirementType: "",
+        date: "",
+        message: "",
+      });
+    } catch (error) {
+      setStatus("error");
+      setErrorMessage(
+        error instanceof Error
+          ? error.message
+          : "Failed to send message. Please try again."
+      );
+      console.error("Form submission error:", error);
+    }
   };
 
   const handleChange = (
@@ -53,20 +77,27 @@ export default function ContactForm() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  if (submitted) {
+  const resetForm = () => {
+    setStatus("idle");
+    setErrorMessage("");
+  };
+
+  if (status === "success") {
     return (
       <div className="text-center py-12">
-        <CheckCircle className="w-16 h-16 text-green-500 mx-auto mb-4" />
+        <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+          <CheckCircle className="w-10 h-10 text-green-600" />
+        </div>
         <h3 className="font-display text-2xl text-cream-950 mb-2">
-          Thank You!
+          Message Sent Successfully!
         </h3>
-        <p className="text-cream-700">
-          Your email client should open with your message. If not, please email
-          directly at chitraraman2008@gmail.com
+        <p className="text-cream-700 mb-6">
+          Thank you for reaching out. Chitra will get back to you within 2-3
+          business days.
         </p>
         <button
-          onClick={() => setSubmitted(false)}
-          className="mt-6 text-temple-gold hover:text-temple-copper transition-colors"
+          onClick={resetForm}
+          className="text-temple-gold hover:text-temple-copper transition-colors font-medium"
         >
           Send another message
         </button>
@@ -76,6 +107,18 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
+      {status === "error" && (
+        <div className="p-4 bg-red-50 border border-red-200 rounded-lg flex items-start gap-3">
+          <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+          <div>
+            <p className="text-sm font-medium text-red-800">
+              Error sending message
+            </p>
+            <p className="text-sm text-red-600 mt-1">{errorMessage}</p>
+          </div>
+        </div>
+      )}
+
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label
@@ -91,7 +134,8 @@ export default function ContactForm() {
             required
             value={formData.name}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-cream-300 bg-white text-cream-900 placeholder-cream-500 transition-colors"
+            disabled={status === "loading"}
+            className="w-full px-4 py-3 rounded-lg border border-cream-300 bg-white text-cream-900 placeholder-cream-500 focus:outline-none focus:ring-2 focus:ring-temple-gold focus:border-transparent transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             placeholder="Your name"
           />
         </div>
@@ -110,7 +154,8 @@ export default function ContactForm() {
             required
             value={formData.email}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-cream-300 bg-white text-cream-900 placeholder-cream-500 transition-colors"
+            disabled={status === "loading"}
+            className="w-full px-4 py-3 rounded-lg border border-cream-300 bg-white text-cream-900 placeholder-cream-500 focus:outline-none focus:ring-2 focus:ring-temple-gold focus:border-transparent transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             placeholder="your@email.com"
           />
         </div>
@@ -128,7 +173,8 @@ export default function ContactForm() {
             name="phone"
             value={formData.phone}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-cream-300 bg-white text-cream-900 placeholder-cream-500 transition-colors"
+            disabled={status === "loading"}
+            className="w-full px-4 py-3 rounded-lg border border-cream-300 bg-white text-cream-900 placeholder-cream-500 focus:outline-none focus:ring-2 focus:ring-temple-gold focus:border-transparent transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             placeholder="+91 98765 43210"
           />
         </div>
@@ -146,7 +192,8 @@ export default function ContactForm() {
             name="city"
             value={formData.city}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-cream-300 bg-white text-cream-900 placeholder-cream-500 transition-colors"
+            disabled={status === "loading"}
+            className="w-full px-4 py-3 rounded-lg border border-cream-300 bg-white text-cream-900 placeholder-cream-500 focus:outline-none focus:ring-2 focus:ring-temple-gold focus:border-transparent transition-all disabled:opacity-50 disabled:cursor-not-allowed"
             placeholder="Mumbai"
           />
         </div>
@@ -164,7 +211,8 @@ export default function ContactForm() {
             required
             value={formData.requirementType}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-cream-300 bg-white text-cream-900 transition-colors"
+            disabled={status === "loading"}
+            className="w-full px-4 py-3 rounded-lg border border-cream-300 bg-white text-cream-900 focus:outline-none focus:ring-2 focus:ring-temple-gold focus:border-transparent transition-all disabled:opacity-50 disabled:cursor-not-allowed"
           >
             <option value="">Select a service</option>
             {requirementTypes.map((type) => (
@@ -188,7 +236,9 @@ export default function ContactForm() {
             name="date"
             value={formData.date}
             onChange={handleChange}
-            className="w-full px-4 py-3 rounded-lg border border-cream-300 bg-white text-cream-900 transition-colors"
+            disabled={status === "loading"}
+            min={new Date().toISOString().split("T")[0]}
+            className="w-full px-4 py-3 rounded-lg border border-cream-300 bg-white text-cream-900 focus:outline-none focus:ring-2 focus:ring-temple-gold focus:border-transparent transition-all disabled:opacity-50 disabled:cursor-not-allowed"
           />
         </div>
       </div>
@@ -207,17 +257,28 @@ export default function ContactForm() {
           rows={5}
           value={formData.message}
           onChange={handleChange}
-          className="w-full px-4 py-3 rounded-lg border border-cream-300 bg-white text-cream-900 placeholder-cream-500 transition-colors resize-none"
+          disabled={status === "loading"}
+          className="w-full px-4 py-3 rounded-lg border border-cream-300 bg-white text-cream-900 placeholder-cream-500 focus:outline-none focus:ring-2 focus:ring-temple-gold focus:border-transparent transition-all resize-none disabled:opacity-50 disabled:cursor-not-allowed"
           placeholder="Tell us about your event, theme, or any specific requirements..."
         />
       </div>
 
       <button
         type="submit"
-        className="w-full md:w-auto px-8 py-4 bg-gradient-to-r from-temple-gold to-temple-copper text-white font-medium rounded-lg hover:shadow-lg transition-all flex items-center justify-center gap-2"
+        disabled={status === "loading"}
+        className="w-full md:w-auto px-8 py-4 bg-gradient-to-r from-temple-gold to-temple-copper text-white font-medium rounded-lg hover:shadow-lg transition-all flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        <Send size={20} />
-        Send Message
+        {status === "loading" ? (
+          <>
+            <Loader2 size={20} className="animate-spin" />
+            Sending...
+          </>
+        ) : (
+          <>
+            <Send size={20} />
+            Send Message
+          </>
+        )}
       </button>
     </form>
   );
