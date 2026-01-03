@@ -1,165 +1,220 @@
 export interface VaranamPasuram {
-  number: number
-  tamilTitle: string
-  tamilText: string
-  englishTranslation: string
-  meaning: string[]
-  sceneDescription: string
-  keywords: string[]
+  number: number;
+  tamilTitle: string;
+  tamilText: string;
+  englishTranslation: string;
+  meaning: string[];
+  sceneDescription: string;
+  keywords: string[];
+  videoId: string;
 }
 
 export const varanamAyiramPasurams: VaranamPasuram[] = [
   {
     number: 1,
-    tamilTitle: 'வாரணமாயிரம்',
-    tamilText: 'வாரணமாயிரம் சூழ வலம்செய்து\nநாரணன் நம்பி நடக்கின்றான் என்றெதிர்\nபூரண பொற்குடம் வைத்துப் புறமெங்கும்\nதோரணம் நாட்டக் கனாக்கண்டேன் தோழீ நான்',
-    englishTranslation: 'I dreamt, O friend, that thousands of elephants circled around as Narayana, the Complete One, walked towards me. Golden pots filled with water were placed, and festoons were hung everywhere around.',
+    tamilTitle: "வாரணமாயிரம்",
+    tamilText:
+      "வாரணமாயிரம் சூழ வலம்செய்து\nநாரணன் நம்பி நடக்கின்றான் என்றெதிர்\nபூரண பொற்குடம் வைத்துப் புறமெங்கும்\nதோரணம் நாட்டக் கனாக்கண்டேன் தோழீ நான்",
+    englishTranslation:
+      "I dreamt, O friend, that thousands of elephants circled around as Narayana, the Complete One, walked towards me. Golden pots filled with water were placed, and festoons were hung everywhere around.",
     meaning: [
-      'Andal dreams of her wedding to Krishna',
-      'Thousands of elephants symbolize royal grandeur',
-      'Narayana himself comes as the bridegroom',
-      'Golden pots (purna kumbham) are auspicious wedding symbols',
-      'Festoons (toranam) indicate celebration'
+      "Andal dreams of her wedding to Krishna",
+      "Thousands of elephants symbolize royal grandeur",
+      "Narayana himself comes as the bridegroom",
+      "Golden pots (purna kumbham) are auspicious wedding symbols",
+      "Festoons (toranam) indicate celebration",
     ],
-    sceneDescription: 'Grand wedding procession with elephants, golden pots arranged, and colorful festoons decorating the path as Krishna approaches.',
-    keywords: ['Elephants', 'Wedding', 'Narayana', 'Golden pots', 'Festoons']
+    sceneDescription:
+      "Grand wedding procession with elephants, golden pots arranged, and colorful festoons decorating the path as Krishna approaches.",
+    keywords: ["Elephants", "Wedding", "Narayana", "Golden pots", "Festoons"],
+    videoId: "qnciQEhehKg",
   },
   {
     number: 2,
-    tamilTitle: 'நாளை வதுவை',
-    tamilText: '[Tamil text - Andal describes wedding preparations]',
-    englishTranslation: 'Tomorrow is the wedding day. The preparations continue with divine grace. The entire Aayarpadi is decorated for the celestial union.',
+    tamilTitle: "நாளை வதுவை",
+    tamilText:
+      "நாளை வதுவை நவின்று ஏத்த இருந்தார் போல்\nஆழி அம் கண்ணன் அழகு அன்று கண்டு அடியேன்\nமேல் இது என் நெஞ்சம் மிகவும் மிக வேவலாய்\nஆல் இலை மேல் துயில் அம்மான் அறிந்து அருளே",
+    englishTranslation:
+      "Tomorrow is the wedding day. The preparations continue with divine grace. Seeing the beautiful Krishna with discus eyes, my heart burns with intense longing. O Lord who reclines on the banyan leaf, please understand and grant me grace.",
     meaning: [
-      'Wedding preparations in full swing',
-      'Divine anticipation of the union',
-      'The cowherd village transforms for celebration'
+      "Wedding preparations in full swing",
+      "Divine anticipation of the union",
+      "Andal's heart burns with devotion",
+      "Prayer for Lord's understanding and grace",
     ],
-    sceneDescription: 'Village women decorating homes, preparing sweets, and arranging flowers for the wedding.',
-    keywords: ['Wedding', 'Preparation', 'Celebration']
+    sceneDescription:
+      "Village women decorating homes, preparing sweets, and arranging flowers for the wedding.",
+    keywords: ["Wedding", "Preparation", "Celebration", "Devotion"],
+    videoId: "GpJBGq48t8M",
   },
   {
     number: 3,
-    tamilTitle: 'இந்திரன் உள்ளிட்ட',
-    tamilText: '[Tamil text - Gods attending the wedding]',
-    englishTranslation: 'Indra and all the celestial beings have arrived to witness and bless this divine wedding. The heavens celebrate this union.',
+    tamilTitle: "இந்திரன் உள்ளிட்ட",
+    tamilText:
+      "இந்திரன் உள்ளிட்ட தேவர் குழாம் எல்லாம்\nமந்தி உருக்கொண்டு வந்து எதிரே மண்டி நின்று\nமைந்தனைப் பிடித்து மணமுடித்து வைத்தக்கால்\nசிந்தை செய்துண்டு சேமத்தில் வைத்தேனே",
+    englishTranslation:
+      "Indra and all the celestial beings took the form of monkeys, came and stood before me, caught the groom, and completed the wedding ceremony. This I have pondered, enjoyed, and treasured in my heart.",
     meaning: [
-      'Indra leads the celestial guests',
-      'Gods descend to witness the wedding',
-      'Divine sanction for the union'
+      "Indra leads the celestial guests",
+      "Gods take monkey forms (reference to Ramayana)",
+      "Divine sanction for the union",
+      "Wedding becomes a cherished memory in her heart",
     ],
-    sceneDescription: 'Celestial beings arriving on divine vehicles, Indra on his elephant Airavata, blessing the couple.',
-    keywords: ['Indra', 'Devas', 'Celestial', 'Blessings']
+    sceneDescription:
+      "Celestial beings arriving in various forms, blessing the couple with divine presence.",
+    keywords: ["Indra", "Devas", "Celestial", "Blessings", "Monkeys"],
+    videoId: "55fimw0FmAQ",
   },
   {
     number: 4,
-    tamilTitle: 'நாற்றிசையும்',
-    tamilText: '[Tamil text - Four directions]',
-    englishTranslation: 'From all four directions, guests arrive bearing gifts. The entire world participates in this cosmic wedding celebration.',
+    tamilTitle: "நாற்றிசையும்",
+    tamilText:
+      "நாற்றிசையும் திசை தோறும் அவர் தம்மை\nதேற்றிலும் காண்கின்றேன் தேவு நின்றாள் போல்\nஆற்றலும் காணேன் அவனைக் கூடும் நாள்\நாற்றிசையும் தெரிவுற வாய்ந்து உணர்ந்தேனே",
+    englishTranslation:
+      "From all four directions, I see Him clearly as if my eyes search for Him. I have no patience until the day I unite with Him. From all four directions, I have clearly understood and realized this truth.",
     meaning: [
-      'Universal participation in the wedding',
-      'Guests from all directions',
-      'Cosmic significance of the union'
+      "Universal vision of the Lord",
+      "Searching in all directions",
+      "Impatience for divine union",
+      "Complete realization of truth",
     ],
-    sceneDescription: 'Processions arriving from all four directions with gifts and offerings.',
-    keywords: ['Four directions', 'Guests', 'Gifts', 'Universal']
+    sceneDescription:
+      "Andal looking in all directions, seeking her beloved Lord Krishna.",
+    keywords: ["Four directions", "Vision", "Seeking", "Realization"],
+    videoId: "pfYt9Y9Z42c",
   },
   {
     number: 5,
-    tamilTitle: 'மத்தளம் கொட்ட',
-    tamilText: '[Tamil text - Musical instruments]',
-    englishTranslation: 'Drums beat in celebration, conches blow auspiciously. The wedding music fills the air with divine melodies.',
+    tamilTitle: "மத்தளம் கொட்ட",
+    tamilText:
+      "மத்தளம் கொட்ட மறையோடு ஓங்கு ஆரவாரம்\nமுத்திறை வணங்க முகில் வண்ணன் வந்து என்னை\nபத்தியால் மணக்கும் பாவை செய்த நன்றி\nசித்திரை ஆனால் சீராய்த் தரும் அம்மா",
+    englishTranslation:
+      "Drums beat in celebration, Vedas are chanted with great sounds, all three worlds bow in reverence. The cloud-colored One comes to marry me with devotion. The good deed I did of creating dolls (Pavai) will beautifully reward me in the month of Chitra (wedding season).",
     meaning: [
-      'Traditional wedding music plays',
-      'Drums and conches create auspicious sounds',
-      'Musical celebration of the union'
+      "Traditional wedding music plays",
+      "Vedic chants fill the air",
+      "All three worlds pay respect",
+      "Reward for devotional practices (making dolls)",
     ],
-    sceneDescription: 'Musicians playing mridangam, nadaswaram, and blowing conches in celebration.',
-    keywords: ['Music', 'Drums', 'Conch', 'Celebration']
+    sceneDescription:
+      "Musicians playing mridangam, priests chanting Vedas, Krishna approaching as the bridegroom.",
+    keywords: ["Music", "Drums", "Vedas", "Celebration", "Pavai"],
+    videoId: "yeDaUBv21G4",
   },
   {
     number: 6,
-    tamilTitle: 'வரிசிலை',
-    tamilText: '[Tamil text - Wedding rituals]',
-    englishTranslation: 'The sacred wedding rituals begin. The divine couple sits before the holy fire as mantras fill the air.',
+    tamilTitle: "வரிசிலை",
+    tamilText:
+      "வரிசிலை வந்து என்னை வாழ்விக்கும் காலத்தில்\nபரிசு பல கொண்டு படிதாய் நின்று ஏத்தும்\nவரிசை மகளிர் அவரும் நின்று ஏத்த\nநெரியும் திரளும் கூட நிற்கேனே",
+    englishTranslation:
+      "When the beautiful-bowed Krishna comes to wed me and give me life, women of good families bring many gifts and stand praising in rows. I stand midst the crowd and gathering.",
     meaning: [
-      'Wedding rituals commence',
-      'Sacred fire is lit',
-      'Vedic mantras are chanted'
+      "Wedding rituals commence",
+      "Gifts are brought by guests",
+      "Women sing praise songs",
+      "Bride stands among the celebration",
     ],
-    sceneDescription: 'The wedding mandapam with the sacred fire, priests chanting, and the couple seated.',
-    keywords: ['Rituals', 'Fire', 'Mantras', 'Mandapam']
+    sceneDescription:
+      "The wedding gathering with women bringing gifts and singing traditional wedding songs.",
+    keywords: ["Rituals", "Gifts", "Women", "Praise", "Gathering"],
+    videoId: "8jqtmJFlQWQ",
   },
   {
     number: 7,
-    tamilTitle: 'காதம் நெய்யே',
-    tamilText: '[Tamil text - Anointing ceremony]',
-    englishTranslation: 'Fragrant oil is poured, turmeric paste is applied. The bride is prepared with traditional anointing ceremonies.',
+    tamilTitle: "காதம் நெய்யே",
+    tamilText:
+      "காதம் நெய்யே கலவை கலந்து அணிவித்து\nஏதம் இலாத பெருமான் முன் எண்திசையும்\nகோதையை நோக்கி வந்து என் குறை தீர்த்து\nஏதேனும் காண்குவன் என்று இருந்தேனே",
+    englishTranslation:
+      "Anointing me with fragrant oil, mixing turmeric paste and adorning me, before the faultless Supreme Lord, Goda (Andal) looks towards all eight directions thinking 'I will see Him somehow' and waits.",
     meaning: [
-      'Anointing ceremony for the bride',
-      'Fragrant oils and turmeric used',
-      'Traditional beautification rituals'
+      "Anointing ceremony for the bride",
+      "Fragrant oils and turmeric paste used",
+      "Traditional beautification rituals",
+      "Andal eagerly awaits her Lord",
     ],
-    sceneDescription: 'Women applying turmeric and oil to Andal, preparing her as the bride.',
-    keywords: ['Anointing', 'Turmeric', 'Oil', 'Bride']
+    sceneDescription:
+      "Women applying turmeric and fragrant oils to Andal, preparing her as the radiant bride.",
+    keywords: ["Anointing", "Turmeric", "Oil", "Bride", "Preparation"],
+    videoId: "0HvkQCjocUI",
   },
   {
     number: 8,
-    tamilTitle: 'ஐயம் அற',
-    tamilText: '[Tamil text - Certainty of union]',
-    englishTranslation: 'Without any doubt, the divine union takes place. Krishna ties the sacred thread (thali) around Andal\'s neck.',
+    tamilTitle: "ஐயம் அற",
+    tamilText:
+      "ஐயம் அற நாரணன் என்னை அணி கொள்ளக் கண்டு\nவைய மகளிர் இன்பம் தலைப்பெய்து அடிக்கீழ்\nமெய்யினால் நின்று தொழுது வேண்டி வேண்ட\nஒய்யென இருந்தது என் உள்ளம் உள்ளதுவே",
+    englishTranslation:
+      "Without any doubt, when Narayana accepted me as His own, the women of this world rejoiced greatly, fell at my feet, worshipped with their bodies, and prayed fervently. My heart rests peacefully with contentment.",
     meaning: [
-      'The moment of marriage arrives',
-      'Tying of the sacred thread',
-      'Complete union of devotee and Lord'
+      "The moment of divine acceptance arrives",
+      "Lord accepts Andal as His own",
+      "Complete union of devotee and Lord",
+      "Peace and contentment in the heart",
     ],
-    sceneDescription: 'Krishna tying the thali around Andal\'s neck as celestials shower flowers.',
-    keywords: ['Thali', 'Union', 'Marriage', 'Sacred']
+    sceneDescription:
+      "Krishna accepting Andal as His bride, celestials and devotees rejoicing and bowing.",
+    keywords: ["Union", "Acceptance", "Peace", "Joy", "Devotion"],
+    videoId: "ggeT4ATEp5s",
   },
   {
     number: 9,
-    tamilTitle: 'ஆயர் குலத்தினில்',
-    tamilText: '[Tamil text - In the cowherd clan]',
-    englishTranslation: 'In the cowherd clan, this divine wedding takes place. Nanda and Yashoda bless the divine couple with overflowing joy.',
+    tamilTitle: "ஆயர் குலத்தினில்",
+    tamilText:
+      "ஆயர் குலத்தினில் தோன்றி அருமறைப் பொருள் நின்று\nமாயன் என்னை அணிகொள்ளும் மாலை\nதூய பெருநீர் யமுனை துறைவன்\nதாய் மற்ற நின்ற தனம் தன்னை நீரே",
+    englishTranslation:
+      "Born in the cowherd clan, standing as the essence of sacred Vedas, the wondrous Lord who adorns me as His bride—He who resides by the pure great waters of Yamuna—is the wealth I have apart from my mother.",
     meaning: [
-      'Wedding in the Yadava/Cowherd tradition',
-      'Nanda and Yashoda give blessings',
-      'Parental joy at the wedding'
+      "Krishna born in the Yadava/Cowherd tradition",
+      "He is the essence of Vedic wisdom",
+      "Lord of Yamuna river",
+      "He is Andal's only treasure",
     ],
-    sceneDescription: 'Nanda and Yashoda blessing Krishna and Andal with tearful eyes.',
-    keywords: ['Cowherd', 'Nanda', 'Yashoda', 'Blessings']
+    sceneDescription:
+      "Krishna in His pastoral setting by the Yamuna, accepting Andal with divine grace.",
+    keywords: ["Cowherd", "Yamuna", "Vedas", "Treasure", "Maya"],
+    videoId: "1wnuv7jKQao",
   },
   {
     number: 10,
-    tamilTitle: 'கூற்றிலை',
-    tamilText: '[Tamil text - Wedding celebrations]',
-    englishTranslation: 'The wedding celebrations continue through the night. Dancing, singing, and feasting mark this joyous occasion.',
+    tamilTitle: "கூற்றிலை கோல்",
+    tamilText:
+      "கூற்றிலை கோல் வாய் வைத்து ஆயிரம் பேர் கூடி\nஆற்றினால் இங்கே யாம் அறியோம் அங்கே\nபாற்கடல் பள்ளி பவள வாய் கமலச்\nசீற் கமலத்தோன் செவ்வடிக்கே யாமே",
+    englishTranslation:
+      "We don't know about the crooked-mouthed death, even if thousands gather here. We belong only to the coral-lipped, lotus-naveled One who reclines on the milky ocean—we are for His sacred red feet alone.",
     meaning: [
-      'Night-long celebrations',
-      'Dancing and singing in joy',
-      'Community celebration'
+      "Indifferent to death when devoted to Lord",
+      "Complete surrender to Vishnu",
+      "Lord reclining on the cosmic ocean",
+      "Total dedication to His holy feet",
     ],
-    sceneDescription: 'Village celebrating with dance, music, and festive food through the night.',
-    keywords: ['Celebration', 'Dance', 'Night', 'Joy']
+    sceneDescription:
+      "Vision of Lord Vishnu reclining on Adisesha in the cosmic ocean, devotees surrendering.",
+    keywords: ["Surrender", "Vishnu", "Ocean of Milk", "Devotion", "Lotus"],
+    videoId: "6h6MHQUvZsY",
   },
   {
     number: 11,
-    tamilTitle: 'அன்று இருவர்',
-    tamilText: '[Tamil text - Two becoming one]',
-    englishTranslation: 'On that day, two became one. Andal merged with her Lord, the dream becoming eternal reality. This divine union shows the path of complete surrender to the beloved Lord.',
+    tamilTitle: "அன்று இவ்வுலகம்",
+    tamilText:
+      "அன்று இவ்வுலகம் அளித்தான் வேங்கடத்தான்\nபின்றை அதனுக்கு இளையாளாய் நின்றேன்\nஎண்திசையும் கேட்க இசை பாடி ஆடி\nநன்று இசையும் இன் சொல் நாராய்ணான் தோளே",
+    englishTranslation:
+      "Long ago, the Lord of Venkatam (Tirupati) granted this world. Then I stood as one younger (devoted) to it. Let all eight directions hear—I sing and dance about the beautiful, sweet-worded Narayana's shoulders.",
     meaning: [
-      'Complete union of Andal and Krishna',
-      'Dream fulfilled in divine reality',
-      'Ultimate surrender and merger',
-      'Path of Bhakti demonstrated'
+      "Lord of Tirupati's supreme grace",
+      "Andal's humble devotion",
+      "Proclaiming her love to all directions",
+      "Joy in singing and dancing for the Lord",
     ],
-    sceneDescription: 'Andal and Krishna in divine union, surrounded by celestial light and flower showers.',
-    keywords: ['Union', 'Merger', 'Surrender', 'Bhakti', 'Eternal']
+    sceneDescription:
+      "Andal joyfully singing and dancing in devotion to Lord Narayana, announcing her love to the universe.",
+    keywords: ["Venkatam", "Narayana", "Singing", "Dancing", "Universal"],
+    videoId: "6h6MHQUvZsY",
   },
-]
+];
 
 export const varanamAyiramIntro = {
-  title: 'Varanam Ayiram',
+  title: "Varanam Ayiram",
   subtitle: "Andal's Divine Dream Wedding",
-  description: 'Varanam Ayiram is a poetic sequence from Nachiyar Thirumozhi describing Andal\'s dream wedding to Krishna. Through 11 beautiful pasurams, Andal narrates her vision of marrying Lord Narayana—complete with elephants, celestial guests, sacred rituals, and divine union. This series depicts these pasurams through handmade doll scenes with narration, helping viewers understand the story and symbolism of this profound expression of Bridal Mysticism (Madhura Bhakti).',
-  videoId: 'hRhW-eO3WfQ', // Compilation video - update with actual
-}
+  description:
+    "Varanam Ayiram is a poetic sequence from Nachiyar Thirumozhi describing Andal's dream wedding to Krishna. Through 11 beautiful pasurams, Andal narrates her vision of marrying Lord Narayana—complete with elephants, celestial guests, sacred rituals, and divine union. This series depicts these pasurams through handmade doll scenes with narration, helping viewers understand the story and symbolism of this profound expression of Bridal Mysticism (Madhura Bhakti).",
+  videoId: "hRhW-eO3WfQ",
+};
